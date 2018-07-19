@@ -1,0 +1,24 @@
+<body>
+Thank you for using Tricia's math application!
+<br>
+<br>
+You chose that you would like to do <%= math_type %>
+<br>
+<br>
+The numbers you are were <%= num1 %> and <%= num2 %>
+<br>
+<br>
+<% if math_type == "subtraction" %>
+<%	result = subtraction(num1.to_i, num2.to_i) %>
+
+<% elsif math_type == "addition" %>
+<%	result = addition(num1.to_i, num2.to_i) %>
+
+<% elsif math_type == "division" %>
+<%	result = division(num1.to_i, num2.to_i) %>
+
+<% elsif math_type == "multiplication" %>
+<%	result = multiplication(num1.to_i, num2.to_i) %>
+<% end %>
+Your result is <%= result %>
+</body>
